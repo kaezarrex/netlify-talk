@@ -1,0 +1,12 @@
+backend:
+    name: git-gateway
+    branch: master
+media_folder: "src/media"
+public_folder: "/media"
+collections:
+  - name: "home" # Used in routes, e.g., /admin/collections/blog
+    folder: "src/pages" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Body", name: "body", widget: "markdown"}
+
